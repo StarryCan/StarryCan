@@ -2,6 +2,41 @@
 console.log('%c✦ StarryCan', 'color: #00d4ff; font-size: 20px; font-weight: bold;');
 console.log('%cDesigned by StarryCan · https://github.com/StarryCan-XC', 'color: #94a3b8; font-size: 12px;');
 
+// 主题切换
+(function() {
+    const toggleBtn = document.getElementById('theme-toggle');
+    const icon = document.getElementById('theme-icon');
+    const html = document.documentElement;
+    
+    // 读取本地存储的主题偏好，默认暗色
+    const savedTheme = localStorage.getItem('starrycan-theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    if (savedTheme === 'light') {
+        html.setAttribute('data-theme', 'light');
+        if (icon) icon.textContent = '🌙';
+    } else if (savedTheme === 'dark' || !savedTheme) {
+        html.removeAttribute('data-theme');
+        if (icon) icon.textContent = '☀️';
+    }
+    
+    if (toggleBtn) {
+        toggleBtn.addEventListener('click', function() {
+            const isLight = html.getAttribute('data-theme') === 'light';
+            
+            if (isLight) {
+                html.removeAttribute('data-theme');
+                localStorage.setItem('starrycan-theme', 'dark');
+                if (icon) icon.textContent = '☀️';
+            } else {
+                html.setAttribute('data-theme', 'light');
+                localStorage.setItem('starrycan-theme', 'light');
+                if (icon) icon.textContent = '🌙';
+            }
+        });
+    }
+})();
+
 // 导航切换
 document.addEventListener('DOMContentLoaded', function() {
     const navToggle = document.querySelector('.nav-toggle');
