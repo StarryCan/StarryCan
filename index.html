@@ -3,16 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StarryCan | 物理系转行AI · 独立天文研究</title>
+    <title>StarryCan Galaxy | 灿的精神世界</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body>
+    <!-- 密码门 -->
+    <div id="password-gate">
+        <div class="gate-box">
+            <div class="gate-logo">✦</div>
+            <h2>StarryCan Galaxy</h2>
+            <p class="gate-desc">灿的精神世界 · 私人领地</p>
+            <input type="password" id="gate-input" placeholder="请输入密码">
+            <button id="gate-btn">进入</button>
+            <p id="gate-error">密码错误，请重试</p>
+        </div>
+    </div>
+
     <!-- 导航 -->
     <nav class="navbar">
         <div class="nav-brand">
             <span class="logo">✦</span>
-            <span class="brand-name">StarryCan</span>
+            <span class="brand-name">StarryCan Galaxy</span>
         </div>
         <div class="nav-links">
             <a href="#about" class="nav-link">关于</a>
@@ -34,27 +46,28 @@
             <div class="hero-avatar">
                 <img src="images/starrycan-avatar.jpg" alt="StarryCan头像">
             </div>
-            <div class="hero-tag">PHYSICS → AI → ASTRONOMY</div>
+            <div class="hero-tag">PHYSICS → AI + ASTRONOMY</div>
             <h1 class="hero-title">
-                <span class="gradient-text">StarryCan</span>
+                <span class="gradient-text">StarryCan Galaxy</span>
             </h1>
             <p class="hero-subtitle">
-                物理系转行AI应用工程师<br>
-                独立天文研究者（黑洞 · 暗能量）<br>
-                <span class="hero-desc">从斯隆巡天到暗能量光谱仪，用代码和数据探索宇宙</span>
+                灿的精神世界
             </p>
             <div class="hero-platforms">
-                <a href="https://www.xiaohongshu.com/user/profile/9539838916" class="platform-btn" target="_blank" rel="noopener">
+                <a href="https://www.xiaohongshu.com/user/profile/60f29015000000000101efe4" class="platform-btn" target="_blank" rel="noopener">
                     <span class="platform-icon">🍠</span> 小红书
                 </a>
-                <a href="#" class="platform-btn" target="_blank" rel="noopener">
+                <a href="https://www.zhihu.com/people/cclll2019484716xcxc" class="platform-btn" target="_blank" rel="noopener">
                     <span class="platform-icon">知</span> 知乎
                 </a>
-                <a href="#" class="platform-btn" target="_blank" rel="noopener">
+                <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzY0MDk2MDcwMQ==&action=getalbum&album_id=4565535231214321665#wechat_redirect" class="platform-btn" target="_blank" rel="noopener">
                     <span class="platform-icon">📡</span> 公众号
                 </a>
-                <a href="#" class="platform-btn" target="_blank" rel="noopener">
+                <a href="https://space.bilibili.com/35231237" class="platform-btn" target="_blank" rel="noopener">
                     <span class="platform-icon">📺</span> B站
+                </a>
+                <a href="https://web.okjike.com/u/4a5eb638-256c-46c5-9b9f-e06dd1fe5205" class="platform-btn" target="_blank" rel="noopener">
+                    <span class="platform-icon">⚡</span> 即刻
                 </a>
             </div>
         </div>
@@ -115,15 +128,15 @@
             <div class="tab-content active" id="tab-ai">
                 <div class="content-list">
                     <article class="content-item">
-                        <div class="content-date">2026.06</div>
-                        <h4>从零开始：物理系转行AI认证学习实录</h4>
-                        <p>记录钉钉AI应用工程师认证的全过程...</p>
-                        <span class="content-tag">认证学习</span>
+                        <div class="content-date">进行中</div>
+                        <h4>我在学的AI工具清单</h4>
+                        <p>正在学习的钉钉AI应用、Python工具链、办公提效方案...</p>
+                        <span class="content-tag">AI工具</span>
                     </article>
                     <article class="content-item">
-                        <div class="content-date">2026.06</div>
-                        <h4>用Python处理真实数据：从Pandas到可视化</h4>
-                        <p>基于Gaia DR3数据的天文数据处理入门...</p>
+                        <div class="content-date">笔记</div>
+                        <h4>我的Python数据处理笔记</h4>
+                        <p>Pandas、Matplotlib、NumPy的学习记录和代码片段...</p>
                         <span class="content-tag">Python</span>
                         <span class="content-tag">数据处理</span>
                     </article>
@@ -133,30 +146,37 @@
             <div class="tab-content" id="tab-astro">
                 <div class="content-list">
                     <article class="content-item">
-                        <div class="content-date">2026.12</div>
-                        <h4>Gaia DR3恒星分布可视化</h4>
-                        <p>用Matplotlib绘制本地恒星的运动学特征...</p>
-                        <span class="content-tag">Gaia</span>
-                        <span class="content-tag">可视化</span>
+                        <div class="content-date">收藏</div>
+                        <h4>我收藏的天文数据集</h4>
+                        <p>SDSS、Gaia DR3、DESI等公开数据资源的整理与笔记...</p>
+                        <span class="content-tag">数据集</span>
+                        <span class="content-tag">收藏</span>
                     </article>
-                    <article class="content-item placeholder">
-                        <div class="content-date">Coming Soon</div>
-                        <h4>黑洞质量-星系速度弥散关系（M-sigma）</h4>
-                        <p>基于SDSS数据的黑洞质量估算研究...</p>
-                        <span class="content-tag">黑洞</span>
-                        <span class="content-tag">SDSS</span>
+                    <article class="content-item">
+                        <div class="content-date">兴趣</div>
+                        <h4>有趣的星系图片收藏</h4>
+                        <p>从各大巡天项目中发现的有趣天体和视觉化作品...</p>
+                        <span class="content-tag">星系</span>
+                        <span class="content-tag">图片</span>
                     </article>
                 </div>
             </div>
             
             <div class="tab-content" id="tab-thoughts">
                 <div class="content-list">
-                    <article class="content-item placeholder">
-                        <div class="content-date">Coming Soon</div>
-                        <h4>从4k到X万：物理系转行AI的年度复盘</h4>
-                        <p>一年时间的职业转型思考...</p>
-                        <span class="content-tag">转行</span>
-                        <span class="content-tag">年度总结</span>
+                    <article class="content-item">
+                        <div class="content-date">阅读</div>
+                        <h4>读书笔记</h4>
+                        <p>物理、天文、AI、技术类书籍的读书随想和摘录...</p>
+                        <span class="content-tag">读书</span>
+                        <span class="content-tag">笔记</span>
+                    </article>
+                    <article class="content-item">
+                        <div class="content-date">生活</div>
+                        <h4>我的目标追踪</h4>
+                        <p>认证进度、学习计划、生活目标的记录与追踪...</p>
+                        <span class="content-tag">目标</span>
+                        <span class="content-tag">追踪</span>
                     </article>
                 </div>
             </div>
@@ -204,7 +224,7 @@
                     <div class="github-box">
                         <h4>💻 GitHub 项目</h4>
                         <p>研究代码与数据集开源</p>
-                        <a href="#" class="github-link">github.com/starrycan</a>
+                        <a href="https://github.com/StarryCan" class="github-link" target="_blank" rel="noopener">github.com/StarryCan</a>
                     </div>
                 </div>
             </div>
@@ -219,41 +239,53 @@
                 找到我
             </h2>
             <div class="contact-grid">
-                <a href="https://www.xiaohongshu.com/user/profile/9539838916" class="contact-card" target="_blank" rel="noopener">
+                <a href="https://www.xiaohongshu.com/user/profile/60f29015000000000101efe4" class="contact-card" target="_blank" rel="noopener">
                     <div class="contact-icon">🍠</div>
                     <h4>小红书</h4>
                     <p>学习打卡 · AI工具 · 日常</p>
                     <span class="contact-id">@StarryCan</span>
                 </a>
-                <a href="#" class="contact-card" target="_blank" rel="noopener">
+                <a href="https://www.zhihu.com/people/cclll2019484716xcxc" class="contact-card" target="_blank" rel="noopener">
                     <div class="contact-icon">知</div>
                     <h4>知乎</h4>
                     <p>技术文章 · 项目复盘 · 深度内容</p>
                     <span class="contact-id">@StarryCan</span>
                 </a>
-                <a href="#" class="contact-card" target="_blank" rel="noopener">
+                <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzY0MDk2MDcwMQ==&action=getalbum&album_id=4565535231214321665#wechat_redirect" class="contact-card" target="_blank" rel="noopener">
                     <div class="contact-icon">📡</div>
                     <h4>微信公众号</h4>
                     <p>深度长文 · 订阅推送</p>
                     <span class="contact-id">StarryCan</span>
                 </a>
-                <a href="#" class="contact-card" target="_blank" rel="noopener">
+                <a href="https://space.bilibili.com/35231237" class="contact-card" target="_blank" rel="noopener">
                     <div class="contact-icon">📺</div>
                     <h4>B站</h4>
                     <p>视频内容 · 天文可视化</p>
                     <span class="contact-id">@StarryCan_星灿</span>
                 </a>
-                <a href="#" class="contact-card" target="_blank" rel="noopener">
+                <a href="https://web.okjike.com/u/4a5eb638-256c-46c5-9b9f-e06dd1fe5205" class="contact-card" target="_blank" rel="noopener">
+                    <div class="contact-icon">⚡</div>
+                    <h4>即刻</h4>
+                    <p>灵感碎片 · 日常思考</p>
+                    <span class="contact-id">@StarryCan</span>
+                </a>
+                <a href="https://github.com/StarryCan" class="contact-card" target="_blank" rel="noopener">
                     <div class="contact-icon">💻</div>
                     <h4>GitHub</h4>
                     <p>代码 · 项目 · 开源</p>
-                    <span class="contact-id">github.com/starrycan</span>
+                    <span class="contact-id">github.com/StarryCan</span>
                 </a>
                 <a href="#" class="contact-card" target="_blank" rel="noopener">
+                    <div class="contact-icon">📄</div>
+                    <h4>arXiv</h4>
+                    <p>预印本 · 论文 · 研究</p>
+                    <span class="contact-id">StarryCan</span>
+                </a>
+                <a href="mailto:2.kinetic913@passfwd.com" class="contact-card" target="_blank" rel="noopener">
                     <div class="contact-icon">📧</div>
                     <h4>邮件</h4>
                     <p>合作 · 咨询 · 交流</p>
-                    <span class="contact-id">coming soon</span>
+                    <span class="contact-id">2.kinetic913@passfwd.com</span>
                 </a>
             </div>
         </div>
@@ -265,14 +297,16 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <span class="logo">✦</span>
-                    <span>StarryCan</span>
+                    <span>StarryCan Galaxy</span>
                 </div>
                 <div class="footer-links">
-                    <a href="https://www.xiaohongshu.com/user/profile/9539838916" target="_blank" rel="noopener">小红书</a>
-                    <a href="#">知乎</a>
-                    <a href="#">公众号</a>
-                    <a href="#">B站</a>
-                    <a href="#">GitHub</a>
+                    <a href="https://www.xiaohongshu.com/user/profile/60f29015000000000101efe4" target="_blank" rel="noopener">小红书</a>
+                    <a href="https://www.zhihu.com/people/cclll2019484716xcxc" target="_blank" rel="noopener">知乎</a>
+                    <a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzY0MDk2MDcwMQ==&action=getalbum&album_id=4565535231214321665#wechat_redirect" target="_blank" rel="noopener">公众号</a>
+                    <a href="https://space.bilibili.com/35231237" target="_blank" rel="noopener">B站</a>
+                    <a href="https://web.okjike.com/u/4a5eb638-256c-46c5-9b9f-e06dd1fe5205" target="_blank" rel="noopener">即刻</a>
+                    <a href="https://github.com/StarryCan" target="_blank" rel="noopener">GitHub</a>
+                    <a href="#" target="_blank" rel="noopener">arXiv</a>
                 </div>
             </div>
             <div class="footer-copyright">
